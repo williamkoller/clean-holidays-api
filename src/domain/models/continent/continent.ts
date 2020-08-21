@@ -4,5 +4,5 @@ export type Continent = {
   capital: string
   coin: string
   localization: string
-  territotialExtension: number
+  territorialExtension: number
 }
