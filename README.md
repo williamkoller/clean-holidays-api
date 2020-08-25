@@ -1,8 +1,5 @@
 # Holidays API
 
-<img src="images/Holidays-API.png"><br/>
-
-<hr>
 
 > ## Princípios
 
