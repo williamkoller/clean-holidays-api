@@ -6,9 +6,7 @@ import { EmailValidator } from '@/presentation/protocols/email-validator'
 import { InvalidParamError } from '@/presentation/errors/invalid-param-error'
 
 export class SignUpController implements Controller {
-  constructor (private readonly emailValidator: EmailValidator) {
-    this.emailValidator = emailValidator
-  }
+  constructor (private readonly emailValidator: EmailValidator) {}
 
   handle (httpRequest: HttpRequest): HttpResponse {
     const requiredFields = ['name', 'email', 'password', 'passwordConfirmation']
