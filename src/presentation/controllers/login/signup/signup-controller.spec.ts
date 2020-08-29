@@ -4,9 +4,12 @@ import {
   InvalidParamError,
   ServerError
 } from '@/presentation/errors'
-import { EmailValidator } from '@/presentation/protocols/email-validator'
-import { AddAccountParams, AddAccount } from '@/domain/usecases/account/add-account'
-import { AccountModel } from '@/domain/models/account/account'
+import {
+  AddAccount,
+  AddAccountParams,
+  AccountModel,
+  EmailValidator
+} from './signup-controller-protocols'
 
 const makeAddAccount = (): AddAccount => {
   class AddAccountStub implements AddAccount {
