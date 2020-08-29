@@ -113,7 +113,7 @@ describe('SignUp Controller', () => {
     expect(isValidSpy).toHaveBeenCalledWith('any_email@mail.com')
   })
 
-  test('Should return 500 if Emailvalidator throws', () => {
+  test('Should return 500 if EmailValidator throws', () => {
     class EmailValidatorStub implements EmailValidator {
       isValid (email: string): boolean {
         throw new Error()
